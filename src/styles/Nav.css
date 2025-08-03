@@ -1,0 +1,131 @@
+nav {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 28vh;
+  z-index: 1;
+}
+
+.nav-bar {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+
+.App__logo {
+  width: 100px;
+}
+
+.nav-description {
+  font-size: 2.25rem;
+  position: absolute;
+}
+
+.nav-description-container {
+  position: relative;
+  z-index: 2; 
+ left: 25%;
+ bottom: 28%;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.nav-bar__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3; 
+}
+
+.yellow {
+  color: #f6cb21;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 50px 50px 50px;
+  gap: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+   border: 2px solid white;
+  background-color: black;
+   padding: 10px 16px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.nav-links li a:hover {
+  color: #ff5252;
+  background-color: #222;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 1200px) {
+   nav {
+    height: 20vh;
+  }
+  
+  .nav-description {
+    font-size: 2rem;
+  }
+  
+ .nav-links {
+   width: 100%;
+   flex-direction: row;
+   margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    height: 20vh;
+  }
+ 
+  .nav-description {
+    font-size: 1.3rem;
+  }
+  .nav-description-container {
+    padding-top:68px;
+  }
+  
+ .nav-links {
+   width: 100%;
+   flex-direction: row;
+   margin-bottom: 100px;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    height: 18vh;
+  }
+  .nav-description {
+    font-size: 18px;
+  }
+  .nav-description-container {
+    padding-top: 68px;
+    padding-right: 48px;
+  }
+
+ .nav-links {
+   width: 100%;
+   flex-direction: row;
+   margin-bottom: 100px;
+  }
+
+}
